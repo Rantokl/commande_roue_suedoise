@@ -13,13 +13,13 @@ rc.Open()
 address = 0x80
 
 while(1):
-	rc.ForwardM1(address,32)	#1/4 power forward
-	rc.BackwardM2(address,32)
+	rc.ForwardM1(address,64)	#1/4 power forward
+	rc.BackwardM2(address,64)
 	print("Backward")	#1/4 power backward
 	time.sleep(2)
 	
-	rc.BackwardM1(address,32)	#1/4 power backward
-	rc.ForwardM2(address,32)
+	rc.BackwardM1(address,64)	#1/4 power backward
+	rc.ForwardM2(address,64)
 	print("Forward")	#1/4 power forward
 	time.sleep(2)
 
