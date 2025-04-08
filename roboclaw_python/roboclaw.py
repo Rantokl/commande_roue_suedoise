@@ -7,7 +7,7 @@ class Roboclaw:
 	'Roboclaw Interface Class'
 	
 	def __init__(self, comport, rate, timeout=0.01, retries=3):
-		self._port = comport
+		self.comport = comport
 		self.rate = rate
 		self.timeout = timeout;
 		self._trystimeout = retries
