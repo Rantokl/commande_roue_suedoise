@@ -1,5 +1,5 @@
 import time
-from roboclaw import Roboclaw
+from roboclaw_3 import Roboclaw
 
 #Windows comport name
 rc = Roboclaw("/dev/ttyS0",115200)
