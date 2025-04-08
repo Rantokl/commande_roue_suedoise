@@ -12,6 +12,7 @@ class Roboclaw:
 		self.timeout = timeout;
 		self._trystimeout = retries
 		self._crc = 0;
+		self._port = 0;
 
 	#Command Enums
 	class Cmd():
