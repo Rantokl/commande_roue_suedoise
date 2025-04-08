@@ -2,7 +2,7 @@ import time
 from roboclaw_3 import Roboclaw
 
 #Windows comport name
-rc = Roboclaw("/dev/ttyS0",115200)
+rc = Roboclaw("/dev/ttyS0",38400)
 #Linux comport name
 #rc = Roboclaw("/dev/ttyACM0",115200)
 
