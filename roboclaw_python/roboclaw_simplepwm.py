@@ -14,15 +14,18 @@ address = 0x80
 
 while(1):
 	rc.ForwardM1(address,32)	#1/4 power forward
-	rc.BackwardM2(address,32)	#1/4 power backward
+	rc.BackwardM2(address,32)
+	print("Backward")	#1/4 power backward
 	time.sleep(2)
 	
 	rc.BackwardM1(address,32)	#1/4 power backward
-	rc.ForwardM2(address,32)	#1/4 power forward
+	rc.ForwardM2(address,32)
+	print("Forward")	#1/4 power forward
 	time.sleep(2)
 
 	rc.BackwardM1(address,0)	#Stopped
-	rc.ForwardM2(address,0)		#Stopped
+	rc.ForwardM2(address,0)	
+	print("Stop")	#Stopped
 	time.sleep(2)
 
 	m1duty = 16
